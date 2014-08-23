@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+    <!--
+        <import resource="classpath:/applicationContext-menu.xml"/>
+        <import resource="classpath:/applicationContext-menu.xml"/>
+    -->
+    <!--<context:property-placeholder location="classpath*:internet-bank.properties" />-->
+
+    <bean id="propertyPlaceholderConfigurer"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath*:internet-bank.properties</value>
+                <value>classpath*:config.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="baseAction" class="com.extdl.action.BaseAction" abstract="true" scope="prototype">
+        <property name="channelName" value="${channel.name}"/>
+    </bean>
+
+    <bean id="exceptionInterceptor" class="com.extdl.interceptor.ExceptionInterceptor"/>
+
+    <bean id="loginAction" class="com.extdl.action.login.LoginAction" scope="prototype" parent="baseAction">
+        <!--<property name="menuGenerator" ref="menuGeneratorBean"/>-->
+        <property name="restrictor" ref="restrictor"/>
+        <property name="loginFacadeRemote" ref="loginFacadeRemoteProxy"/>
+        <property name="userChannelSettingFacadeRemote" ref="userChannelSettingFacadeRemoteProxy"/>
+    </bean>
+
+    <bean id="userChannelSettingFacadeRemoteProxy"
+          class="com.extdl.proxy.UserChannelSettingFacadeRemoteProxy">
+        <property name="serviceLocator" ref="serviceLocator"/>
+    </bean>
+
+    <bean id="restrictor" class="com.extdl.util.Restrictor" scope="singleton">
+        <constructor-arg index="0" type="int" value="${control.period.in.hour}"/>
+        <constructor-arg index="1" type="int" value="${control.counter}"/>
+    </bean>
+
+    <bean id="i18nInterceptor" class="com.extdl.interceptor.I18nInterceptor"/>
+
+    <bean id="redirectAfterPostInterceptor" class="com.extdl.interceptor.RedirectAfterPostInterceptor"/>
+
+    <bean id="authenticationInterceptor" class="com.extdl.interceptor.AuthenticationInterceptor"/>
+
+    <bean id="preventAccessInterceptor" class="com.extdl.interceptor.PreventAccessInterceptor"/>
+
+    <bean id="preventCrossSiteScriptingInterceptor"
+          class="com.extdl.interceptor.PreventCrossSiteScriptingInterceptor"/>
+
+    <bean id="serviceLocator" class="com.kishware.ebank.channelmanager.client.locator.ServiceLocator">
+        <constructor-arg index="0" value="${channel.manager.ip}"/>
+        <constructor-arg index="1" value="${channel.manager.port}"/>
+    </bean>
+
+    <bean id="loginFacadeRemoteProxy" class="com.extdl.proxy.LoginFacadeRemoteProxy">
+        <property name="serviceLocator" ref="serviceLocator"/>
+    </bean>
+
+</beans>

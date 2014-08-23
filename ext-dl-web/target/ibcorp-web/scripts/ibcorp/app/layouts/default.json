@@ -1,0 +1,25 @@
+{
+    "items": [
+        {
+            "region": "north",
+            "height": 110,
+            "items": [
+                {
+                    "xtype": "masterheader"
+                },
+                {
+                    "xtype": "masternavigation"
+                }
+            ]
+
+        },
+        {
+            "region": "center",
+            "xtype": "mastercontent"
+        },
+        {
+            "region": "south",
+            "xtype": "masterfooter"
+        }
+    ]
+}

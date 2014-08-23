@@ -1,0 +1,40 @@
+{
+    "DEPOSIT_GROUP_TYPE": {
+        "JARI_ACCOUNT": "Jari Account",
+        "SPECIAL_LONG_ACCOUNT": "Special Long Account",
+        "OTHERS": "Others",
+        "EDARE_SHODE": "Edare Shode",
+        "ANDOKHTE_ACCOUNT": "Andookhte Acoount",
+        "SPECIAL_SHORT_ACCOUNT": "Special Short Account",
+        "PASANDAZ": "Pasandaz",
+        "SHORT_ACCOUNT": "Short Account",
+        "LONG_ACCOUNT": "Long Account"
+    },
+
+    "COMMONS": {
+        "LOADING": "Loading ...",
+        "RIAL_SIGN": "RLS",
+        "RIAL_DECIMAL_CURRENCY_PRECISION": "0",
+        "RIAL_DECIMAL_SEPARATOR": ".",
+        "RIAL_THOUSAND_SEPARATOR":","
+    },
+
+    "DEPOSIT_LIST": {
+        "DEPOSIT_NUMBER": "Deposit Number",
+        "BLOCKED_AMOUNT": "Blocked Amount",
+        "AVAILABLE_BALANCE": "Available Balance",
+        "BALANCE": "Balance",
+        "CURRENCY": "Currency",
+        "PERSONALITY": "Personality",
+        "OWNER": "Owner",
+        "WITHDRAWAL_OPTION": "Withdrawal Option",
+        "SIGNATURE": "Withdrawal Option",
+        "DEPOSIT_TITLE": "Deposit Title",
+        "BRANCH": "Branch",
+        "CITY_NAME": "City Name",
+        "PROVINCE_NAME": "Province Name",
+        "GROUP": "Group",
+        "SUPPORT_STATUS": "Support Status",
+        "SUPPORT_GROUP": "Support Group Type"
+    }
+}

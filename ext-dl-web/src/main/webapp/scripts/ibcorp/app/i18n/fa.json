@@ -1,0 +1,45 @@
+{
+    "DEPOSIT_GROUP_TYPE": {
+        "JARI_ACCOUNT": "جاری",
+        "SPECIAL_LONG_ACCOUNT": "ویژه بلند مدت",
+        "OTHERS": "سایر",
+        "EDARE_SHODE": "اداره شده",
+        "ANDOKHTE_ACCOUNT": "اندوخته",
+        "SPECIAL_SHORT_ACCOUNT": "ویژه کوتاه مدت",
+        "PASANDAZ": "پس انداز",
+        "SHORT_ACCOUNT": "کوتاه مدت",
+        "LONG_ACCOUNT": "بلند مدت"
+    },
+    "COMMONS": {
+        "LOADING": "بارگذاری ...",
+        "RIAL_SIGN": "ريال",
+        "RIAL_DECIMAL_CURRENCY_PRECISION": "0",
+        "RIAL_DECIMAL_SEPARATOR": ".",
+        "RIAL_THOUSAND_SEPARATOR": ","
+    },
+
+    "WARNINGS": {
+        "UNSUPPORTED_BROWSER_MESSAGE": "در حال حاضر این صفحه با مرورگر شما قابل مشاهده نیست. لطفا مرورگر خود را به روز کنید یا از مرورگر دیگری استفاده کنید."
+    },
+
+    "DEPOSIT_LIST": {
+        "DEPOSIT_NUMBER": "شماره سپرده",
+        "BLOCKED_AMOUNT": "مبلغ مسدودی",
+        "AVAILABLE_BALANCE": "موجودی قابل برداشت",
+        "BALANCE": "موجودی",
+        "CURRENCY": "ارز",
+        "PERSONALITY": "Personality",
+        "OWNER": "Owner",
+        "WITHDRAWAL_OPTION": "Withdrawal Option",
+        "SIGNATURE": "Withdrawal Option",
+        "DEPOSIT_TITLE": "Deposit Title",
+        "BRANCH": "Branch",
+        "CITY_NAME": "City Name",
+        "PROVINCE_NAME": "Province Name",
+        "GROUP": "Group",
+        "SUPPORT_STATUS": "Support Status",
+        "SUPPORT_GROUP": "Support Group Type"
+    }
+}
+
+
