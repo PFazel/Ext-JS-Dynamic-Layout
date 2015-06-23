@@ -12,7 +12,7 @@ Ext.require([
 /* context of application for correct addresses */
 /*TODO: this property should be taken from server*/
 extdl = {};
-extdl.ctx = '/ExtJS-dynamic-layout/master/';
+extdl.ctx = '/parham-fazel/ExtJS-dynamic-layout/master/';
 Ext.application({
 
     controllers: ["applicationManager.ApplicationManager", "ViewManager", "deposit.DepositList", "cp.ResourceEditor"],
