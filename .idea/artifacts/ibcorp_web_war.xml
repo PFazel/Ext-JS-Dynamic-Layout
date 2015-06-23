@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="ibcorp-web:war">
-    <output-path>$PROJECT_DIR$/ibcorp-web/target</output-path>
-    <root id="archive" name="extdl-web.war">
-      <element id="artifact" artifact-name="ibcorp-web:war exploded" />
-    </root>
-  </artifact>
-</component>
