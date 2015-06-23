@@ -7,7 +7,7 @@ Ext.define('extdl.i18n.ResourceHelper', {
     singleton: true,
     getResourceFile: function (fileName, callBack, scope) {
         Ext.Ajax.request({
-            url: extdl.ctx + 'scripts/extdl/app/i18n/'+ fileName,
+            url: extdl.ctx + 'app/i18n/'+ fileName,
             success: function(response){
                 extdl.i18n.ResourceHelper.msgs = Ext.decode(response.responseText);
                 extdl.getText = extdl.i18n.ResourceHelper.getText;

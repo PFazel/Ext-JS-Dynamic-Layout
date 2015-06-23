@@ -45,7 +45,7 @@ Ext.define('extdl.model.Deposit', {
 
     proxy: {
         type: 'ajax',
-        url: extdl.ctx + 'scripts/extdl/app/mock/deposit.json',
+        url: extdl.ctx + 'app/mock/deposit.json',
         reader: {
             type: 'json',
             root: 'depositList'

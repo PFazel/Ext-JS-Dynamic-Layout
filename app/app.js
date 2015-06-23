@@ -58,7 +58,7 @@ Ext.application({
 
         var createViewPort = function () {
             Ext.Ajax.request({
-                url: extdl.ctx + 'scripts/extdl/app/layouts/' + extdl.layout + '.json',
+                url: extdl.ctx + 'app/layouts/' + extdl.layout + '.json',
                 success: function (response) {
                     var responseObj = Ext.decode(response.responseText);
                     Ext.create('extdl.view.Viewport', {
@@ -73,7 +73,7 @@ Ext.application({
         };
 
         /* This file contains localization for Extjs classes in farsi */
-        Ext.Loader.loadScript(extdl.ctx + 'scripts/extdl/ext/locale/ext-lang-' + extdl.locale + '.js');
+        Ext.Loader.loadScript(extdl.ctx + 'ext/locale/ext-lang-' + extdl.locale + '.js');
 
         /* This file contains localization for extdl classes in farsi */
         extdl.i18n.ResourceHelper.getResourceFile(extdl.locale + '.json', createViewPort);
